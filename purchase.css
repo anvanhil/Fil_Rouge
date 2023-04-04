@@ -1,0 +1,315 @@
+@font-face {
+    font-family:"Schwifty" ;
+    src: url("police/get_schwifty.ttf"); 
+}
+
+@font-face {
+    font-family:"Cornichon" ;
+    src: url("police/cornichon.ttf"); 
+}
+@font-face {
+    font-family:"Lemon" ;
+    src: url("police/LEMONMILK-Bold.otf"); 
+}
+@font-face {
+    font-family:"Pavia" ;
+    src: url("police/Pavia.ttf"); 
+}
+@font-face {
+    font-family:"LCG" ;
+    src: url("police/LCG\ light.ttf"); 
+}
+
+
+body{
+    background-color: #252525;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    user-select: none
+}
+
+hr{
+    border-color: rgb(0, 255, 0);
+    margin-bottom: 50px;
+}
+
+.section1{
+    background-image: url('image/space.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1{
+    font-family: Schwifty;
+    font-size: 100px;
+    color: rgb(9, 251, 1);
+    text-shadow: 4px 4px rgb(221, 255, 0);
+    transition: all 300ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+h1:hover{
+    transform: translate(0,-10px);
+	text-shadow: 4px 4px rgb(0, 255, 0);
+	color : rgb(255, 0, 242);
+}
+
+#bouton1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
+	color : rgb(0, 255, 123);
+	text-decoration: none;
+	font-size: 2.5rem;
+	text-shadow: 3px 3px rgb(6, 5, 5);
+	
+	transition: all 300ms ease-in-out;
+
+    width: 300px;
+    height: 65px;
+	border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+
+#bouton1:hover{
+	color : rgb(255, 85, 246);
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+}
+
+.défilement{
+    height: 100px;
+    margin-top : 200px;
+    opacity: 50%;
+}
+.défil{
+    height: 100px;
+    margin-top : 200px;
+    opacity: 50%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+#page1{
+    margin-top: 250px;  
+}
+
+h2{
+    font-family: Cornichon;
+    font-size: 80px;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    text-shadow: 4px 4px #00e6ee;
+	color : rgb(255, 0, 242);
+}
+h3{
+    font-size: 30px;
+    display:flex;
+    justify-content: center;
+    font-family: Pavia;
+    padding-bottom: 50px;
+    color:rgb(255, 253, 223);
+}
+h4{
+    margin-top: 50px;
+    font-size: 20px;
+    display:flex;
+    justify-content: center;
+    font-family: LCG;
+    color:rgb(255, 253, 223);
+    margin-left: 350px;
+    margin-right: 350px;
+    text-align: center;
+}
+
+.rectangle{
+    background-color: #252525;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px;
+    width: 650px;
+    height: 200px;
+    margin-top: 280px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.rectangle h5{
+    font-size: 20px;
+    font-family: LCG;
+    color:rgb(255, 253, 223);
+    text-shadow: 2px 2px black;
+}
+
+.roulante{
+    margin-top: 80px;
+    box-shadow: 3px 3px;
+    border-radius: 20px;
+    transition: all 300ms ease-in-out;
+}
+
+.containerpage1{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 150px;
+    padding-left: 80px;
+   
+}
+
+#page2{
+    padding-top: 100px;
+}
+
+#page2 h2{
+    padding-top : 80px;
+}
+
+.offres{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.offre1 img{
+    width: 700px;
+    height: 450px;
+    box-shadow: 3px 3px 20px rgb(255, 0, 242);;
+    transition: all 800ms ease-in-out;
+}
+
+.offre1 img:hover{
+    box-shadow: 5px 5px 40px #00e6ee;
+}
+
+#description{
+    padding-top : 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    font-family: LCG;
+    color:rgb(255, 253, 223);
+    text-align: center;   
+}
+
+#description h5{
+    margin-bottom : -50px;
+}
+
+#page3{
+    margin-top: 100px;
+}
+#containerpage3{
+    display: flex;
+    flex-direction: column;
+}
+#imgrouge{
+    display: flex;
+    justify-content: center;
+}
+#imgrouge img{
+    width: 1000px;
+    border-radius: 20px;
+    box-shadow: 3px 3px;
+}
+
+
+
+
+@media screen and (min-width: 707px){   /*Grand Ecran*/
+    .roulante:hover{
+        transform: scale(1.2);
+    }
+}
+
+
+@media screen and (max-width: 707px){   /*Petit Ecran*/
+    h1{
+    font-size: 35px;
+    text-shadow: 2px 2px rgb(221, 255, 0); 
+    }
+
+    #bouton1{
+        width: 200px;
+        height: 40px;
+        font-size: 2em;
+        text-shadow: 2px 2px rgb(6, 5, 5);
+    }
+
+    a{
+        padding-bottom: 35px;
+    }
+
+    .container{
+        margin-top: 80px;
+    }
+
+    #page1{
+        margin-top: 80px;
+        margin-left: 10px;  
+        margin-right: 10px;
+    }
+
+    h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    h3{
+        text-align:center;
+    }
+    h4{
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .roulante{
+        margin-top: 20px;
+        transition: all 300ms ease-in-out;
+        width: 400px;
+        align-items: center;
+    }
+
+    .containerpage1{
+        margin-top: 60px;
+        padding-right: 0px;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+
+    .rectangle{
+        background-color: rgba(105, 105, 105, 0.255);
+        text-align: center;
+        width: 450px;
+        height: 135px;
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+        border: 1px white solid;
+    }
+
+}
